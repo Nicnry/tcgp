@@ -31,6 +31,8 @@ public class Card {
     @Column(name = "rarity_value")
     private int rarityValue;
 
+    private String image;
+
     // Getters and Setters
 
     public int getId() {
@@ -119,5 +121,13 @@ public class Card {
 
     public void setRarityValue(int rarityValue) {
         this.rarityValue = rarityValue;
+    }
+
+    public String getimage() {
+        return image;
+    }
+
+    public void setimage(String image) {
+        this.image = image;
     }
 }

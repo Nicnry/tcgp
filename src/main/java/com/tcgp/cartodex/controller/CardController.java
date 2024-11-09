@@ -23,7 +23,7 @@ public class CardController {
 
     // Obtenir une carte par son ID
     @GetMapping("/{id}")
-    public Optional<Card> getCardById(@PathVariable int id) {
+    public Optional<Card> getCardById(@PathVariable("id") int id) {
         return cardService.getCardById(id);
     }
 
@@ -35,7 +35,7 @@ public class CardController {
 
     // Supprimer une carte
     @DeleteMapping("/{id}")
-    public void deleteCard(@PathVariable int id) {
+    public void deleteCard(@PathVariable("id") int id) {
         cardService.deleteCard(id);
     }
 }
